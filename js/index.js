@@ -54,7 +54,6 @@ function searchStores(){
   if (zipCode){
     stores.forEach((store, index) => {
       var postal = store.address.postalCode.substring(0, 5);
-      console.log(postal);
       if(postal == zipCode){
         foundStores.push(store);
       }
@@ -62,7 +61,6 @@ function searchStores(){
   } else {
     foundStores = stores;
   }
-  console.log(foundStores);
   clearLocations();
   displayStores(foundStores);
   showStoreMarkers(foundStores);
