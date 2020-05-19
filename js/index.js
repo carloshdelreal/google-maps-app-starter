@@ -53,7 +53,7 @@ function searchStores(){
   var zipCode = document.getElementById('zip-code-input').value;
   if (zipCode){
     stores.forEach((store, index) => {
-      var postal = store.address.postalCode.substring(0, 5);
+      var postal = store.address.postalCode.substring(0, zipCode.length);
       if(postal == zipCode){
         foundStores.push(store);
       }
