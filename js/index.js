@@ -110,3 +110,9 @@ function displayStores(stores){
   document.querySelector('.store-list').innerHTML = storesHtml;
 }
 
+const searchBox = document.querySelector('#zip-code-input')
+searchBox.addEventListener('keydown', (event) => {
+  if (event.keyCode === 13){
+    searchStores()
+  }
+})
