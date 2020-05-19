@@ -15,7 +15,7 @@ body {
 
 .title{
     position: absolute;
-    font-size: 88px;
+    font-size: 3rem;
     text-transform: uppercase;
     color: #333;
     font-weight: bold;
@@ -28,11 +28,11 @@ body {
 .search-container{
     display: flex;
     position: absolute;
-    width: 400px;
-    height: 60px;
+    width: 360px;
+    height: 40px;
     background-color: #666;
     z-index: 100;
-    top: 230px;
+    top: 165px;
     left: 100px;
     border-radius: 30px;
 }
@@ -70,9 +70,9 @@ body {
     display: flex;
     position: absolute;
     background: white;
-    width: 400px;
+    width: 320px;
     z-index: 100;
-    top: 320px;
+    top: 255px;
     bottom: 22px;
     left: 100px;
     border-radius: 30px;
